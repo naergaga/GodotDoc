@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "doc",
+	"version": "0.0.1",
+	"browser_action": {
+		"default_title": "doc"
+	},
+	"permissions" : ["https://docs.godotengine.org/*"],
+	"content_scripts":[
+		{
+			"matches":["https://docs.godotengine.org/*"],
+			"js":["js/doc.js"]
+		}
+	]
+}
